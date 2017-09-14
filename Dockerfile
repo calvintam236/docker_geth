@@ -11,6 +11,6 @@ RUN apt-get update \
     && apt-get -y remove software-properties-common \
     && apt-get -y autoremove \
     && apt-get clean autoclean \
-    && rm -rf /var/lib/{apt,dpkg,cache,log}/
+    && rm -rf /var/lib/{apt,dpkg,cache,log}
 
 ENTRYPOINT ["geth"]
