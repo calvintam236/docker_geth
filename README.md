@@ -15,7 +15,7 @@ $ docker run -d --name YOUR_CONTAINER_NAME calvintam236/geth --etherbase YOUR_WA
 Get `geth` options with:
 
 ```console
-$ docker run --rm calvintam236/geth --help
+$ docker run --rm calvintam236/geth
 ```
 
 Fetch logs of a container:
