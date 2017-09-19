@@ -4,18 +4,18 @@ geth is the console miner provided by [Ethereum](https://github.com/ethereum/go-
 
 geth supports Ethereum (ETH).
 
-# How to use this image
+# How to use this image [AMD64 version]
 
 Run in background:
 
 ```console
-$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/geth --etherbase YOUR_WALLET_ADDRESS --mine --autodag
+$ docker run -d --name YOUR_CONTAINER_NAME calvintam236/geth:amd64
 ```
 
 Get `geth` options with:
 
 ```console
-$ docker run --rm calvintam236/geth
+$ docker run --rm calvintam236/geth:amd64
 ```
 
 Fetch logs of a container:
