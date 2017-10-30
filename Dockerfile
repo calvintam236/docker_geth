@@ -7,6 +7,7 @@ RUN apt-get update \
     && apt-get -y --no-install-recommends install ca-certificates curl \
     && curl -L -O https://gethstore.blob.core.windows.net/builds/geth-linux-amd64-1.7.2-1db4ecdc.tar.gz \
     && tar -xf geth-linux-amd64-1.7.2-1db4ecdc.tar.gz \
+    && rm geth-linux-amd64-1.7.2-1db4ecdc.tar.gz \
     && mv geth-linux-amd64-1.7.2-1db4ecdc/geth /usr/local/bin/geth \
     && chmod a+x /usr/local/bin/geth \
     && rm -r geth-linux-amd64-1.7.2-1db4ecdc \
