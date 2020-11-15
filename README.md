@@ -2,10 +2,6 @@
 
 ### What is it?
 
-XMRig is the console miner provided by [XMRig](https://github.com/xmrig/xmrig).
-
-XMRig supports Cryptonight, Argon2, RandomX and their variants.
-
 geth is the console full node & miner provided by [Ethereum](https://github.com/ethereum/go-ethereum).
 
 geth supports Ethereum (ETH).
