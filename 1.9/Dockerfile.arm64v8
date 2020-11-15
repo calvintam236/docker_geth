@@ -1,0 +1,19 @@
+FROM debian:buster-slim
+
+LABEL maintainer="calvintam236"
+LABEL description="geth in Docker. Full node. Supports CPU mining."
+
+WORKDIR /tmp/
+
+ADD \
+https://gethstore.blob.core.windows.net/builds/geth-linux-arm64-1.9.24-cc05b050.tar.gz \
+.
+
+RUN \
+tar -xvf geth-linux-arm64-1.9.24-cc05b050.tar.gz \
+&& mv geth-linux-arm64-1.9.24-cc05b050/geth /usr/local/bin/ \
+&& chmod +x /usr/local/bin/geth \
+&& rm -r *
+
+ENTRYPOINT ["geth"]
+CMD ["--help"]
