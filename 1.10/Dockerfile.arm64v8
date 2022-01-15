@@ -11,7 +11,7 @@ https://gethstore.blob.core.windows.net/builds/geth-linux-arm64-1.10.11-7231b3ef
 
 RUN \
 tar -xvf geth-linux-arm64-1.10.11-7231b3ef.tar.gz \
-&& mv geth-linux-arm6-1.10.11-7231b3eff/geth /usr/local/bin/ \
+&& mv geth-linux-arm6-1.10.11-7231b3ef/geth /usr/local/bin/ \
 && chmod +x /usr/local/bin/geth \
 && rm -r *
 
