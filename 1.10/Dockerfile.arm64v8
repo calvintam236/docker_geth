@@ -6,12 +6,12 @@ LABEL description="geth in Docker. Full node. Supports CPU mining."
 WORKDIR /tmp/
 
 ADD \
-https://gethstore.blob.core.windows.net/builds/geth-linux-arm64-1.10.18-de23cf91.tar.gz \
+https://gethstore.blob.core.windows.net/builds/geth-linux-arm64-1.10.20-8f2416a8.tar.gz \
 .
 
 RUN \
-tar -xvf geth-linux-arm64-1.10.18-de23cf91.tar.gz \
-&& mv geth-linux-arm6-1.10.18-de23cf91/geth /usr/local/bin/ \
+tar -xvf geth-linux-arm64-1.10.20-8f2416a8.tar.gz \
+&& mv geth-linux-arm6-1.10.20-8f2416a8/geth /usr/local/bin/ \
 && chmod +x /usr/local/bin/geth \
 && rm -r *
 
